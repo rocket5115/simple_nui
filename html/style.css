@@ -1,0 +1,111 @@
+::-webkit-scrollbar {
+    width: 5px;
+}
+  
+::-webkit-scrollbar-track {
+    background: transparent; 
+}
+   
+::-webkit-scrollbar-thumb {
+    background-color: rgba(136, 136, 136, 0.645);
+}
+  
+::-webkit-scrollbar-thumb:hover {
+    background-color: rgba(85, 85, 85, 0.669); 
+}
+
+html {
+    width: 100%;
+    height: 100%;
+    user-select: none;
+}
+
+#container {
+    position: absolute;
+    transform: translate(70%, 2.5%);
+    width: 40%;
+    height: 95%;
+    background:
+    linear-gradient(27deg, #151515 5px, transparent 5px) 0 5px,
+    linear-gradient(207deg, #151515 5px, transparent 5px) 10px 0px,
+    linear-gradient(27deg, #222 5px, transparent 5px) 0px 10px,
+    linear-gradient(207deg, #222 5px, transparent 5px) 10px 5px,
+    linear-gradient(90deg, #1b1b1b 10px, transparent 10px),
+    linear-gradient(#1d1d1d 25%, #1a1a1a 25%, #1a1a1a 50%, transparent 50%, transparent 75%, #242424 75%, #242424);
+    background-color: #131313;
+    background-size: 20px 20px;
+}
+
+#clip {
+    position: inherit;
+    top: 0.5%;
+    left: 45%;
+    width: 100px;
+    height: 20px;
+    background-color: #8b7f58;
+    background-image:
+    repeating-linear-gradient(120deg, rgba(255,255,255,.1), rgba(255,255,255,.1) 1px, transparent 1px, transparent 60px),
+    repeating-linear-gradient(60deg, rgba(255,255,255,.1), rgba(255,255,255,.1) 1px, transparent 1px, transparent 60px),
+    linear-gradient(60deg, rgba(0,0,0,.1) 25%, transparent 25%, transparent 75%, rgba(0,0,0,.1) 75%, rgba(0,0,0,.1)),
+    linear-gradient(120deg, rgba(0,0,0,.1) 25%, transparent 25%, transparent 75%, rgba(0,0,0,.1) 75%, rgba(0,0,0,.1));
+}
+
+#page {
+    position: relative;
+    margin-left: 2rem;
+    margin-top: 2rem;
+    width: calc(100% - 3rem);
+    height: calc(100% - 3rem);
+    background-color: #fff;
+    background-image:
+    linear-gradient(90deg, transparent 79px, #abced4 79px, #abced4 81px, transparent 81px),
+    linear-gradient(#eee .1em, transparent .1em);
+    background-size: 100% 1.2em;
+    max-width: calc(100% - 3rem);
+    max-height: calc(100% - 3rem);
+    overflow: hidden;
+}
+
+#page>div {
+    display: grid;
+    grid-auto-flow: row;
+    grid-gap: calc(.1em + 38px);
+    row-gap: calc(.1em + 38px);
+    margin-left: calc(2rem + 52px);
+}
+
+#page>textarea {
+    margin-left: calc(2rem + 52px);
+    max-width: 80%;
+    max-height: 80%;
+}
+
+#page>* {
+    max-width: 100%;
+}
+
+#page>div>* {
+    font-family: monospace;
+    font-size: 48px;
+}
+
+#text {
+    background-color: transparent;
+    font-size: 24px;
+    font-weight: bold;
+    font-family: monospace;
+}
+
+#button {
+    text-align: center;
+    line-height: 75px;
+    width: 150px;
+    height: 75px;
+    background-color: rgba(10, 210, 10, 0.83);
+}
+
+#button:hover {
+    background-color: rgba(10, 251, 10, 0.865);
+    font-size: 36px;
+    cursor: pointer;
+}
